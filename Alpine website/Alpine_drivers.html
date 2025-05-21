@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stats and Drivers</title>
+		<link href="styles_alpine.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="main">
+			<h1>Alpine</h1>
+			
+			<img class="alt_img" src="flag.jpg" width="20%">
+			
+			<div>
+				<div class="teams_dropdown">
+					<button class="button" onclick="Alpine_home.html">Teams</button>
+					<div class="teams_dropdown-content">
+						<a href="../Aston website/Aston_home.html">Aston Martin</a>
+						<a href="../Ferrari website/Ferrari_home.html">Ferrari</a>
+						<a href="../Haas website/Haas_home.html">Haas</a>
+						<a href="../McLaren website/McLaren_home.html">McLaren</a>
+						<a href="../Mercedes website/Mercedes_home.html">Mercedes</a>
+						<a href="../RedBull website/RedBull_home.html">RedBull</a>
+						<a href="../Sauber website/Sauber_home.html">Kick Sauber</a>
+						<a href="../VCARB website/VCARB_home.html">Racing Bulls</a>
+						<a href="../Williams website/Williams_home.html">Williams</a>
+						<a href="../index.html">Formula 1</a>
+						<a href="Alpine_home.html">Home</a>
+					</div>
+				</div>
+				<button class="button" onclick="document.location='Alpine_history.html'">The History of Alpine</button>
+				<button class="button" onclick="document.location='Alpine_current_team.html'">The Current Team</button>
+				<button class="button disabled">Statistics</button>
+			</div>
+			
+			<div id="page">
+				<div class="card">
+					<div class="dropdown">
+						<button style="font-family: F1-regular;font-size: 110%;" class="dropdown-button">Driver Profiles</button>
+
+						<div class="dropdown-content">
+							<div class="column">
+								<button class="dropbtn" onclick="deleteInfo('Pierre Gasly')">Pierre Gasly</button>
+								<button class="dropbtn" onclick="deleteInfo('Fernando Alonso')">Fernando Alonso</button>
+								<button class="dropbtn" onclick="deleteInfo('Esteban Ocon')">Esteban Ocon</button>
+								<button class="dropbtn" onclick="displayStats()">Stats</button>
+							</div>
+						</div>
+					</div>
+					
+					<div id="box">
+						<h2>Stats</h2>
+						<ul>
+							<li style="float: none;">WDC: 0</li>
+							<li style="float: none;">WCC: 0</li>
+							<li style="float: none;">Race Wins: 1</li>
+							<li style="float: none;">Podiums: 6</li>
+							<li style="float: none;">Poles: 0</li>
+							<li style="float: none;">Races: 96</li>
+						</ul>
+						<h2>2025 Stats</h2>
+						<ul>
+							<li style="float: none;">Race Wins: 0</li>
+							<li style="float: none;">Poles: 0</li>
+							<li style="float: none;">Strint Wins: 0</li>
+							<li style="float: none;">Points: 7</li>
+							<li style="float: none;">Podiums: 0</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p style="font-family: Arial;">© 2025 Tom Chapman | Powered by Delusion</p>
+		</div>
+		
+		<script src="AlpineScript.js" defer></script>
+	</body>
+</html>
