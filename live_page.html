@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formula 1</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="main">
+			<h1>Formula 1</h1>
+			
+			<img class="alt_img" src="F1.jpg" width="20%">
+			
+			<div>
+				<div class="teams_dropdown">
+					<button class="button">Teams</button>
+					<div class="teams_dropdown-content">
+						<a href="Alpine website/Alpine_home.html">Alpine</a>
+						<a href="Aston website/Aston_home.html">Aston Martin</a>
+						<a href="Ferrari website/Ferrari_home.html">Ferrari</a>
+						<a href="Haas website/Haas_home.html">Haas</a>
+						<a href="McLaren website/McLaren_home.html">McLaren</a>
+						<a href="Mercedes website/Mercedes_home.html">Mercedes</a>
+						<a href="RedBull website/RedBull_home.html">RedBull</a>
+						<a href="Sauber website/Sauber_home.html">Kick Sauber</a>
+						<a href="VCARB website/VCARB_home.html">Racing Bulls</a>
+						<a href="Williams website/Williams_home.html">Williams</a>
+						<a href="index.html">Home</a>
+					</div>
+				</div>
+				
+				<div class="teams_dropdown">
+					<button class="button">Live Links</button>
+					<div class="teams_dropdown-content">
+						<button class="links" onclick="document.getElementById('video_box').src='https://givemereddit.org/f1/formula1.html'">reddit streams</button>
+						<button class="links" onclick="document.getElementById('video_box').src='https://vod.rerace.io/live/embed'">rerace sky F1</button>
+						<button class="links" onclick="document.getElementById('video_box').src='https://vivosoccer.xyz/vivoall/10.php'">vivo</button>
+					</div>
+				</div>
+			</div>
+			
+			<div id="page">
+				<div class="card">
+					<iframe id="video_box" src="" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	
+		<div class="footer">
+			<p style="font-family: Arial;">© 2025 Tom Chapman | Powered by Delusion</p>
+		</div>
+		
+		<script src="main.js" defer></script>
+	</body>
+</html>
