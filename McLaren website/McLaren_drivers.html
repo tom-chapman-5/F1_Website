@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stats and Drivers</title>
+		<link href="styles_mclaren.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="main">
+			<h1>McLaren</h1>
+			
+			<img class="alt_img" src="papaya_stripes.jpg" width="20%">
+			
+			<div>
+				<div class="teams_dropdown">
+					<button class="button" onclick="McLaren_home.html">Teams</button>
+					<div class="teams_dropdown-content">
+						<a href="../Alpine website/Alpine_home.html">Alpine</a>
+						<a href="../Aston website/Aston_home.html">Aston Martin</a>
+						<a href="../Ferrari website/Ferrari_home.html">Ferrari</a>
+						<a href="../Haas website/Haas_home.html">Haas</a>
+						<a href="../Mercedes website/Mercedes_home.html">Mercedes</a>
+						<a href="../RedBull website/RedBull_home.html">RedBull</a>
+						<a href="../Sauber website/Sauber_home.html">Kick Sauber</a>
+						<a href="../VCARB website/VCARB_home.html">Racing Bulls</a>
+						<a href="../Williams website/Williams_home.html">Williams</a>
+						<a href="../index.html">Formula 1</a>
+						<a href="McLaren_home.html">Home</a>
+					</div>
+				</div>
+				<button class="button" onclick="document.location='McLaren_history.html'">The History of McLaren</button>
+				<button class="button" onclick="document.location='McLaren_current_team.html'">The Current Team</button>
+				<button class="button disabled">Statistics</button>
+			</div>
+			
+			<div id="page">
+				<div class="card">
+					<div class="dropdown">
+						<button style="font-family: F1-regular;font-size: 110%;" class="dropdown-button">Driver Profiles</button>
+
+						<div class="dropdown-content">
+							<div class="column">
+								<button class="dropbtn" onclick="deleteInfo('Lewis Hamilton')">Lewis Hamilton</button>
+								<button class="dropbtn" onclick="deleteInfo('James Hunt')">James Hunt</button>
+								<button class="dropbtn" onclick="deleteInfo('Emmerson Fittipaldi')">Emmerson Fittipaldi</button>
+								<button class="dropbtn" onclick="deleteInfo('Lando Norris')">Lando Norris</button>
+								<button class="dropbtn" onclick="deleteInfo('Mika Hakkinen')">Mika Hakkinen</button>
+								<button class="dropbtn" onclick="deleteInfo('Niki Lauda')">Niki Lauda</button>
+							</div>
+							<div class="column">
+								<button class="dropbtn" onclick="deleteInfo('Alain Prost')">Alain Prost</button>
+								<button class="dropbtn" onclick="deleteInfo('Ayrton Senna')">Ayrton Senna</button>
+								<button class="dropbtn" onclick="deleteInfo('Bruce McLaren')">Bruce McLaren</button>
+								<button class="dropbtn" onclick="deleteInfo('David Coulthard')">David Coulthard</button>
+								<button class="dropbtn" onclick="deleteInfo('Oscar Piastri')">Oscar Piastri</button>
+								<button class="dropbtn" onclick="deleteInfo('Jenson Button')">Jenson Button</button>
+								<button class="dropbtn" onclick="displayStats()">Stats</button>
+							</div>
+						</div>
+					</div>
+					
+					<div id="box">
+						<h2>Stats</h2>
+						<ul>
+							<li style="float: none;">WDC: 12</li>
+							<li style="float: none;">WCC: 9</li>
+							<li style="float: none;">Race Wins: 194</li>
+							<li style="float: none;">Podiums: 534</li>
+							<li style="float: none;">Poles: 167</li>
+							<li style="float: none;">Races: 976</li>
+						</ul>
+						<h2>2025 Stats</h2>
+						<ul>
+							<li style="float: none;">Race Wins: 5</li>
+							<li style="float: none;">Poles: 3</li>
+							<li style="float: none;">Strint Wins: 1</li>
+							<li style="float: none;">Points: 244</li>
+							<li style="float: none;">Podiums: 10</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p style="font-family: Arial;">© 2025 Tom Chapman | Powered by Delusion</p>
+		</div>
+		
+		<script src="McLarenScript.js" defer></script>
+	</body>
+</html>

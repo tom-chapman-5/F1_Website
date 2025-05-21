@@ -1,0 +1,236 @@
+
+/* fonts and characters */
+
+@font-face {
+	font-family: "F1-regular";
+	src: url("Formula1-Regular_web_0.ttf");
+}
+
+@font-face {
+	font-family: "F1-bold";
+	src: url("Formula1-Bold_web_0.ttf");
+}
+
+@font-face {
+	font-family: "F1-wide";
+	src: url("Formula1-Wide_web_0.ttf");
+}
+
+@charset "utf-8";
+
+
+
+
+
+
+/* main layouts */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.0)), url("papaya.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: F1-regular;
+	font-size: 18px;
+	text-align: center;
+	color: white;
+}
+
+.main {
+	margin: 40px auto;
+}
+
+#page {
+	max-width: 60%;
+	margin: 50px auto;
+	padding: 40px;
+	float: center;
+	background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.7));
+	color: black;
+	border-radius: 6px;
+	border: solid 1px #CCCCCC;
+}
+
+h1 {
+	font-family: F1-wide;
+}
+
+h2 {
+	font-family: F1-bold;
+	border-bottom: solid 1px #FF8000;
+}
+
+
+
+
+
+
+
+/* buttons */
+
+.button {
+  background-color: #FF8000;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 90%;
+  font-family: F1-regular;
+}
+
+.button:hover {
+  background-color: #BF6000;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.teams_dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.teams_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FF8000;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.teams_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 90%;
+}
+
+.teams_dropdown-content a:hover {
+	background-color: #BF6000;
+}
+
+.teams_dropdown:hover .teams_dropdown-content {
+  display: block;
+}
+
+.teams_disabled {
+	opacity: 0.6;
+	background-color: #BF6000;
+}
+
+
+
+
+
+/* nav bar and dropdown*/
+
+/* Basic styling for the dropdown container */
+.dropdown {
+	background-color:#FF8000;
+	width: 100%;
+}
+
+/* The button or label for the dropdown */
+.dropdown-button {
+	display: block;
+	color: white;
+	background-color: #FF8000;
+	padding: 15px 8px;
+	text-align: center;
+	text-decoration: none;
+	border: #BF6000 3px;
+	width: 178px;
+}
+
+/* The dropdown content container */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #FF8000;
+	min-width: 100px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+	padding: 5px;
+}
+
+/* Multi-column layout for dropdown content */
+.dropdown-content .column {
+    float: left;
+    width: 150px; /* Width of each column */
+    padding: 5px;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+	display: block;
+	color: white;
+	background-color: #FF8000;
+	padding: 15px 8px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	width: 143px;
+	font-family: F1-regular;
+}
+
+.dropbtn:hover {
+	background-color: #BF6000;
+	color: black;
+}
+
+
+
+
+
+/* more layout details */
+
+#card {
+	background-color: white;
+	border: solid 1px #CCCCCC;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+.card {
+	background-color: white;
+	border: solid 1px #CCCCCC;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+#box {
+	text-align: left;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+img {
+	border: solid 1px #FF8000;
+}
+
+.alt_img {
+	border: none;
+	padding-bottom: 40px;
+}
+
+.footer {
+	text-align: center;
+	color: white;
+	padding: 10px;
+}

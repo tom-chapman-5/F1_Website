@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stats and Drivers</title>
+		<link href="styles_redbull.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="main">
+			<h1>RedBull Racing</h1>
+			
+			<img class="alt_img" src="rbr.png" width="3%">
+			
+			<div>
+				<div class="teams_dropdown">
+					<button class="button" onclick="RedBull_home.html">Teams</button>
+					<div class="teams_dropdown-content">
+						<a href="../Alpine website/Alpine_home.html">Alpine</a>
+						<a href="../Aston website/Aston_home.html">Aston Martin</a>
+						<a href="../Ferrari website/Ferrari_home.html">Ferrari</a>
+						<a href="../Haas website/Haas_home.html">Haas</a>
+						<a href="../McLaren website/McLaren_home.html">McLaren</a>
+						<a href="../Mercedes website/Mercedes_home.html">Mercedes</a>
+						<a href="../Sauber website/Sauber_home.html">Kick Sauber</a>
+						<a href="../VCARB website/VCARB_home.html">Racing Bulls</a>
+						<a href="../Williams website/Williams_home.html">Williams</a>
+						<a href="../index.html">Formula 1</a>
+						<a href="RedBull_home.html">Home</a>
+					</div>
+				</div>
+				<button class="button" onclick="document.location='RedBull_history.html'">The History of RedBull</button>
+				<button class="button" onclick="document.location='RedBull_current_team.html'">The Current Team</button>
+				<button class="button disabled">Statistics</button>
+			</div>
+			
+			<div id="page">
+				<div class="card">
+					<div class="dropdown">
+						<button style="font-family: F1-regular;font-size: 110%;" class="dropdown-button">Driver Profiles</button>
+
+						<div class="dropdown-content">
+							<div class="column">
+								<button class="dropbtn" onclick="deleteInfo('Max Verstappen')">Max Verstappen</button>
+								<button class="dropbtn" onclick="deleteInfo('Sebastian Vettel')">Sebastian Vettel</button>
+								<button class="dropbtn" onclick="deleteInfo('Mark Webber')">Mark Webber</button>
+							</div>
+							<div class="column">
+								<button class="dropbtn" onclick="deleteInfo('Daniel Ricciardo')">Daniel Ricciardo</button>
+								<button class="dropbtn" onclick="deleteInfo('David Coulthard')">David Coulthard</button>
+								<button class="dropbtn" onclick="deleteInfo('Sergio Perez')">Sergio Perez</button>
+								<button class="dropbtn" onclick="displayStats()">Stats</button>
+							</div>
+						</div>
+					</div>
+					
+					<div id="box">
+						<h2>Stats</h2>
+						<ul>
+							<li style="float: none;">WDC: 8</li>
+							<li style="float: none;">WCC: 6</li>
+							<li style="float: none;">Race Wins: 123</li>
+							<li style="float: none;">Podiums: 285</li>
+							<li style="float: none;">Poles: 106</li>
+							<li style="float: none;">Races: 400</li>
+						</ul>
+						<h2>2025 Stats</h2>
+						<ul>
+							<li style="float: none;">Race Wins: 1</li>
+							<li style="float: none;">Poles: 3</li>
+							<li style="float: none;">Strint Wins: 0</li>
+							<li style="float: none;">Points: 105</li>
+							<li style="float: none;">Podiums: 3</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p style="font-family: Arial;">© 2025 Tom Chapman | Powered by Delusion</p>
+		</div>
+		
+		<script src="RedBullScript.js" defer></script>
+	</body>
+</html>
