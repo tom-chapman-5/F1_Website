@@ -67,7 +67,7 @@ function displayStats() {
 		<ul>
 			<li style="float: none;">Race Wins: 0</li>
 			<li style="float: none;">Poles: 0</li>
-			<li style="float: none;">Strint Wins: 0</li>
+			<li style="float: none;">Sprint Wins: 0</li>
 			<li style="float: none;">Points: 14</li>
 			<li style="float: none;">Podiums: 0</li>
 		</ul>
